@@ -10,6 +10,9 @@
 10、mysql；
 11、Dao服务的基类
 12、数据访问对象DAO
+13、mockmvc结合Assert单元测试
+14、页面发起ajax请求
+15、通过注解实现入参校验（mockmvc测试的时候不起作用）
 
 
 

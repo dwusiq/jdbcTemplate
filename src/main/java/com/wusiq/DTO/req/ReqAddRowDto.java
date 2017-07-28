@@ -2,6 +2,8 @@ package com.wusiq.DTO.req;
 
 import org.hibernate.validator.constraints.NotEmpty;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import java.io.Serializable;
 
 /**
@@ -10,7 +12,8 @@ import java.io.Serializable;
 public class ReqAddRowDto implements Serializable{
     @NotEmpty(message="userName is empty")
     private String userName;
-    @NotEmpty(message="userAge is empty")
+    @Min(value = 1,message="please userAge>1")
+    @Max(value = 200,message="userAge<200")
     private Integer userAge;
 
     public String getUserName() {
